@@ -30,10 +30,10 @@ The goals / steps of this project are the following:
 #### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
 My project includes the following files:
-* clone.py containing the script to create and train the model
+* model.py containing the script to create and train the model
 * drive.py for driving the car in autonomous mode
 * model.h5 containing a trained convolution neural network
-* run1.mp4 for visualizing the result of autonomous driving using trained network
+* video.mp4 for visualizing the result of autonomous driving using trained network
 * writeup_report.md summarizing the results
 
 #### 2. Submission includes functional code
@@ -45,13 +45,13 @@ $ python drive.py model.h5
 
 #### 3. Submission code is usable and readable
 
-The clone.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
+The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
 ### Model Architecture and Training Strategy
 
 #### 1. An appropriate model architecture has been employed
 
-My model consists of 5 convolution neural networks with 5x5 and 3x3 filter sizes and depths between 24 and 64 (clone.py lines 55-68), followed by 4 fully connected layer to produce steering angle, which is single float number. 
+My model consists of 5 convolution neural networks with 5x5 and 3x3 filter sizes and depths between 24 and 64 (model.py lines 55-68), followed by 4 fully connected layer to produce steering angle, which is single float number. 
 
 The model includes ReLU and tanh layers to introduce nonlinearity (code line 58-62 and 65-67), and the data is normalized in the model using a Keras lambda layer (code line 18). 
 
